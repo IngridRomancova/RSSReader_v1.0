@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.1.1</version>
+    <relativePath/>
+  </parent>
+
+  <groupId>eu.evropskyrozhled</groupId>
+  <artifactId>root-pom</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+  <name>Root POM</name>
+  <description>Parent project for all microservices to keep the versions same.</description>
+
+  <properties>
+    <java.version>20</java.version>
+    <spring-boot.version>3.1.2</spring-boot.version>
+    <rome.version>2.1.0</rome.version>
+    <junit.version>3.8.1</junit.version>
+    <junit-jupiter.version>5.10.0</junit-jupiter.version>
+    <swagger-core.version>2.2.15</swagger-core.version>
+    <swagger.version>1.6.11</swagger.version>
+    <springfox-swagger.version>3.0.0</springfox-swagger.version>
+    <springdoc.version>1.1.49</springdoc.version>
+    <mapstruct.version>1.5.3.Final</mapstruct.version>
+
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.rometools</groupId>
+        <artifactId>rome</artifactId>
+        <version>${rome.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger2</artifactId>
+        <version>${springfox-swagger.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger-ui</artifactId>
+        <version>${springfox-swagger.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.github.classgraph</groupId>
+        <artifactId>classgraph</artifactId>
+        <version>4.8.161</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>analyze</id>
+              <goals>
+                <goal>analyze-only</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
