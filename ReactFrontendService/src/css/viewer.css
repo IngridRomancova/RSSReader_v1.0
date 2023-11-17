@@ -1,0 +1,152 @@
+.channel-scroll {
+  height: 65vh;
+  overflow: auto;
+  width: 390px;
+  max-width: 390px;
+}
+
+.channel_pagination-scroll {
+  height: 10vh;
+  overflow: auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.description-scroll {
+  height: 20vh;
+  overflow: auto;
+  vertical-align: center;
+}
+
+.article-scroll {
+  height: 45vh;
+  overflow: auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagination-scroll {
+  height: 10vh;
+  overflow: auto;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+  white-space: 'nowrap';
+}
+
+.btn-group,
+.btn-group-vertical {
+  display: block;
+}
+
+.banner {
+  cursor: pointer;
+  white-space: nowrap;
+  width: 375px;
+  max-width: 375px;
+  min-width: 375px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.banner-block {
+  width: 350px;
+  min-width: 350px;
+  max-width: 350px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.banner-button {
+  width: 25px;
+  max-width: 25px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.article-channel {
+  white-space: nowrap;
+  width: 250px;
+  max-width: 250px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.keyword-channel {
+  white-space: nowrap;
+  width: 250px;
+  max-width: 250px;
+}
+
+.article-title {
+  white-space: nowrap;
+  width: 850px;
+  max-width: 850px;
+}
+
+.keyword-title {
+  white-space: nowrap;
+  width: 800px;
+  max-width: 800px;
+}
+
+.article-time {
+  white-space: nowrap;
+  width: 180px;
+  max-width: 180px;
+}
+
+.keyword-time {
+  white-space: nowrap;
+  width: 150px;
+  max-width: 150px;
+}
+
+.article-buttons {
+  white-space: nowrap;
+  width: 150px;
+  max-width: 150px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.keyword-buttons {
+  white-space: nowrap;
+  width: 200px;
+  max-width: 200px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.description-block {
+  white-space: nowrap;
+  width: 150px;
+  max-width: 150px;
+  align: center;
+}
+
+.web-img {
+  width: 150px;
+  max-width: 150px;
+  padding: 20px 0px 0px 10px;
+}
+
+.td-blank {
+  width: 50px;
+  max-width: 50px;
+}
+
+.description-text {
+  width: 1200px;
+  max-width: 1200px;
+}
+
+.iconButton {
+  color: #fff;
+  p: 5px;
+}

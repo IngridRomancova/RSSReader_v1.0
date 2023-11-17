@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>eu.evropskyrozhled</groupId>
+  <artifactId>RSSReader</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+    <module>root-pom</module>
+  </modules>
+  <version>1.0</version>
+  <name>RSSReader</name>
+  <url>http://maven.apache.org</url>
+  <description>Dummy grouping for all artifacts</description>
+
+  <profiles>
+    <profile>
+      <id>common</id>
+      <modules>
+        <module>root-pom</module>
+        <module>H2DatabaseCommon</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>all</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <modules>
+        <module>root-pom</module>
+        <module>H2DatabaseService</module>
+      </modules>
+    </profile>
+  </profiles>
+</project>

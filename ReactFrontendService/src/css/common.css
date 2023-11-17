@@ -1,0 +1,74 @@
+.figure {
+	margin-top: 1rem;
+	margin-right: 3rem;
+	font-weight: bold;
+}
+
+.title {
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin-top: 2rem;
+	margin-bottom: 0rem;
+	color: #0a58ca;
+	font-weight: 2000px;
+}
+
+.label {
+	margin-top: 1rem;
+	font-weight: bold;
+	color: #0a58ca;
+}
+
+.button {
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+	margin-right: 2rem;
+	font-weight: bold;
+	color: #0a58ca;
+}
+
+.small-icon {
+	width: 30px;
+	height: 30px;
+}
+
+.big-icon {
+	width: 64px;
+	height: 64px;
+}
+
+.icon24 {
+	width: 24px;
+	height: 24px;
+}
+
+.icon25 {
+	width: 25px;
+	height: 25px;
+}
+
+.icon26 {
+	width: 26px;
+	height: 26px;
+}
+
+.big-column {
+	width: 30%;
+}
+
+.small-column {
+	width: 10%;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+td {
+	border: solid 1px #000;
+	border-style: none solid solid none;
+	padding-left: 10px;
+}

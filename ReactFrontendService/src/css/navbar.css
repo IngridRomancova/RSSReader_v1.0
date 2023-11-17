@@ -1,0 +1,21 @@
+.navbar-brand {
+	margin-left: .9em;
+}
+
+.welcome-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	margin-top: 10rem;
+}
+
+.icon {
+	width: 50px;
+	height: 50px;
+}
+
+.grain {
+	width: 500px;
+	height: 500px;
+}
